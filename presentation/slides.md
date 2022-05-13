@@ -25,3 +25,8 @@ drawings:
 
 ### Patrick Drechsler
 
+---
+
+## Meta: wie gut sind unsere Tests?
+
+Ist dass nicht schon von Code-Coverage Tools abgedeckt?
