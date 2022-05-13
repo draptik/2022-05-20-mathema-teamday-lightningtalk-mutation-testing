@@ -8,5 +8,6 @@
     "progress"
   ],
   "testRunner": "jest",
-  "coverageAnalysis": "perTest"
+  "coverageAnalysis": "perTest",
+  "mutate": [ "rules.js" ]
 }
