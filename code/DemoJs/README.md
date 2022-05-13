@@ -4,7 +4,9 @@ Documentation for StrykerJS: https://stryker-mutator.io/docs/stryker-js/introduc
 
 ## Prerequisites
 
-None.
+```sh
+npm i
+```
 
 ## Usage
 
