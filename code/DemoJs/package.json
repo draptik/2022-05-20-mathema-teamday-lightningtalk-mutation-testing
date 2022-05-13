@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "scripts": {
+    "test": "mocha rules.test.js"
+  },
+  "devDependencies": {
+    "@stryker-mutator/core": "^6.0.2",
+    "mocha": "^10.0.0"
+  }
+}
