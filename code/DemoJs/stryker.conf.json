@@ -7,7 +7,6 @@
     "clear-text",
     "progress"
   ],
-  "testRunner": "mocha",
-  "coverageAnalysis": "perTest",
-  "mutate": [ "rules.js" ]
+  "testRunner": "jest",
+  "coverageAnalysis": "perTest"
 }

@@ -44,4 +44,4 @@ function getFirst(numbers) {
     return numbers[0];
 }
 
-export { helloWorld, isValid, anotherValidation, looping, logical, getFirst };
+module.exports = { helloWorld, isValid, anotherValidation, looping, logical, getFirst };
