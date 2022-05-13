@@ -11,5 +11,5 @@ npm i
 ## Usage
 
 - run tests: `./run-tests.sh`
-- run stryker: `./run-stryker.sh
+- run stryker: `./run-stryker.sh`
 
