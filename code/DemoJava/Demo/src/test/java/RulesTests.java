@@ -1,7 +1,11 @@
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
+
+import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -14,10 +18,20 @@ public class RulesTests {
         var expected = "Hello World";
         assertEquals(expected, rules.helloWorld());
     }
-//
-//    @ParameterizedTest
-//    @CsvSource({""})
-//    void isValid1(String input, Boolean expected) {
-//        assertEquals(expected, rules.isValid(input));
-//    }
+
+    @ParameterizedTest
+    @MethodSource("sampleDataIsValid")
+    void isValid(String input, Boolean expected) {
+        assertEquals(expected, rules.isValid(input));
+    }
+
+    private static Stream<Arguments> sampleDataIsValid() {
+        return Stream.of(
+                Arguments.of("", false),
+                Arguments.of("a", true),
+                Arguments.of(null, false),
+                Arguments.of("123", true),
+                Arguments.of("1234567890x", false)
+        );
+    }
 }
