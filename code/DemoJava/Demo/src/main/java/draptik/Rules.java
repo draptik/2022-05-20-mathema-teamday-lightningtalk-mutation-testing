@@ -1,3 +1,5 @@
+package draptik;
+
 import org.junit.platform.commons.util.StringUtils;
 
 public class Rules {
