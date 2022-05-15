@@ -2,11 +2,8 @@ package draptik;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.jupiter.params.provider.NullAndEmptySource;
 import org.junit.jupiter.params.provider.ValueSource;
-
-import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -16,27 +13,19 @@ class RulesTests {
 
     @Test
     void helloWorld() {
-        var expected = "Hello World";
-        assertThat(rules.helloWorld()).isEqualTo(expected);
+        assertThat(rules.helloWorld()).isEqualTo("Hello World");
     }
 
     @ParameterizedTest
-    @MethodSource
+    @ValueSource(strings = {"a", "123"})
     void isValid_positiveTests(String input) {
         assertThat(rules.isValid(input)).isTrue();
     }
 
-    private static Stream<String> isValid_positiveTests() {
-        return Stream.of("a","123");
-    }
-
     @ParameterizedTest
-    @MethodSource
+    @NullAndEmptySource
+    @ValueSource(strings = {"1234567890x"})
     void isValid_negativeTests(String input) {
         assertThat(rules.isValid(input)).isFalse();
-    }
-
-    private static Stream<String> isValid_negativeTests() {
-        return Stream.of(null,"","1234567890x");
     }
 }
