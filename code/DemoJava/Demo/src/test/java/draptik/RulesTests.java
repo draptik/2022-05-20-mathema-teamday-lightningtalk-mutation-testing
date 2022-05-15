@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import java.util.stream.Stream;
 
@@ -20,18 +21,22 @@ class RulesTests {
     }
 
     @ParameterizedTest
-    @MethodSource("sampleDataIsValid")
-    void isValid(String input, Boolean expected) {
-        assertThat(rules.isValid(input)).isEqualTo(expected);
+    @MethodSource
+    void isValid_positiveTests(String input) {
+        assertThat(rules.isValid(input)).isTrue();
     }
 
-    private static Stream<Arguments> sampleDataIsValid() {
-        return Stream.of(
-                Arguments.of("", false),
-                Arguments.of("a", true),
-                Arguments.of(null, false),
-                Arguments.of("123", true),
-                Arguments.of("1234567890x", false)
-        );
+    private static Stream<String> isValid_positiveTests() {
+        return Stream.of("a","123");
+    }
+
+    @ParameterizedTest
+    @MethodSource
+    void isValid_negativeTests(String input) {
+        assertThat(rules.isValid(input)).isFalse();
+    }
+
+    private static Stream<String> isValid_negativeTests() {
+        return Stream.of(null,"","1234567890x");
     }
 }
