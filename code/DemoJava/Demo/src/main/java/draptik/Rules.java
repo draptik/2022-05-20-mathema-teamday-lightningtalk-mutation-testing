@@ -3,8 +3,11 @@ package draptik;
 import org.junit.platform.commons.util.StringUtils;
 
 public class Rules {
+
+    private static final String HELLO_WORLD = "Hello World";
+
     public String helloWorld() {
-        return "Hello World";
+        return HELLO_WORLD;
     }
 
     public boolean isValid(String s) {
