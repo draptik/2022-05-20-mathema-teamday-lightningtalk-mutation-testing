@@ -1,6 +1,5 @@
 package draptik;
 
-import draptik.Rules;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -10,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class RulesTests {
+class RulesTests {
 
     private final Rules rules = new Rules();
 
