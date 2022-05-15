@@ -15,11 +15,6 @@ public class Rules {
             return false;
         }
 
-        if (s.length() > 10) {
-            return false;
-        }
-        else {
-            return true;
-        }
+        return s.length() <= 10;
     }
 }
