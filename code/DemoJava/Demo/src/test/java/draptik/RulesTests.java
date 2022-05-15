@@ -7,7 +7,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class RulesTests {
 
@@ -16,13 +16,13 @@ class RulesTests {
     @Test
     void helloWorld() {
         var expected = "Hello World";
-        assertEquals(expected, rules.helloWorld());
+        assertThat(rules.helloWorld()).isEqualTo(expected);
     }
 
     @ParameterizedTest
     @MethodSource("sampleDataIsValid")
     void isValid(String input, Boolean expected) {
-        assertEquals(expected, rules.isValid(input));
+        assertThat(rules.isValid(input)).isEqualTo(expected);
     }
 
     private static Stream<Arguments> sampleDataIsValid() {
