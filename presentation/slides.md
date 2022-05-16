@@ -134,12 +134,13 @@ Demo is in C#
 
 Frameworks for other languages are available
 
+For some languages there is a demo in the repo:
+
 - Java (using PIT)
 - Javascript (using Stryker)
 - Python (using Cosmic-Ray)
 
-(see repo for examples)
-
+But the concept is available in most languages
 
 ---
 
