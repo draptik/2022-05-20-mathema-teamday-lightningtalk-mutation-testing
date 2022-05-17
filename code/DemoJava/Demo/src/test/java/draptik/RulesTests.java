@@ -17,14 +17,14 @@ class RulesTests {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"a", "123"})
+    @ValueSource(strings = {"a", "123", "1234567890"})
     void isValid_positiveTests(String input) {
         assertThat(rules.isValid(input)).isTrue();
     }
 
     @ParameterizedTest
     @NullAndEmptySource
-    @ValueSource(strings = {"1234567890x"})
+    @ValueSource(strings = {"1234567890x", "123456789012345678901234567890"})
     void isValid_negativeTests(String input) {
         assertThat(rules.isValid(input)).isFalse();
     }
