@@ -10,3 +10,5 @@ The following command will execute pitest
 
 This will output a html report to `target/pit-reports/YYYYMMDDHHMI`.
 Open the generated report in your browser.
+
+Special thanks to [Tom Schneider](https://github.com/ric03) for providing the Java Demo!
