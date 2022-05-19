@@ -31,13 +31,15 @@ drawings:
 
 what more do you want?
 
+<img src="content/images/screenshot-code-coverage-100percent.png" class="absolute top-35 left-80 h-2/3 rounded" />
+
 ---
 layout: my-two-cols
 ---
 
 ::top::
 
-## Example
+### Example
 
 ::left::
 
@@ -59,7 +61,6 @@ public class Rules
     return true;
   }
 }
-
 ```
 
 ::right::
@@ -91,7 +92,7 @@ layout: image-right
 image: "content/images/cabeca-zumbi.png"
 ---
 
-## Let's create some mutants!
+### Let's create some mutants!
 
 Let's change
 
@@ -102,7 +103,7 @@ if (s.Length > 3)
 to
 
 ```csharp
-if (s.Length < 3) // <- this is a "MUTANT"
+if (s.Length < 3)  // <- this is a "MUTANT"
 ```
 
 ```csharp
@@ -111,7 +112,7 @@ if (s.Length >= 3) // <- this is another "MUTANT"
 
 
 ```csharp
-if (s.Length <= 3) // <- and another "MUTANT"
+if (s.Length <= 3) // <- ...and another "MUTANT"
 ```
 
 Do we still have the same code coverage?
@@ -122,37 +123,61 @@ layout: image-right
 image: "content/images/zombie-4659324_1280.webp"
 ---
 
-## Concept of mutation testing
+### Concept
 
 - Production code is modified (by the mutation testing framework)
 - Test suite is run
 
 Did any mutants survive?
 
-- If all mutants die, the test suite is fine
-- But if some mutants survive, the tests are not covering all cases
+- If all mutants die, the test suite is fine 👌
+- But if some mutants survive, the tests are not covering all cases 👀
+  - 👉 take a closer look
 
-Many mutation frameworks have an interactive html report
+Many mutation frameworks generate an interactive html report
+
+---
+layout: iframe-right
+url: https://stryker-mutator.io/docs/stryker-net/mutations/
+---
+
+### Example mutations
+
+https://stryker-mutator.io/docs/stryker-net/mutations/
+
+<img src="/content/images/screenshot-stryker-mutations.png" class="absolute top-35 left-50 h-2/3 rounded" />
+
 ---
 layout: image-left
 image: "content/images/Male-Zombie.png"
 ---
 
-## Live Demo
-
-Demo is in C#
-
-Frameworks for other languages are available
-
-For some languages there is a demo in the repo:
-
-- Java (using PIT)
-- Javascript (using Stryker)
-- Python (using Cosmic-Ray)
-
-But the concept is available in most languages
+### Live Demo
 
 ---
+
+## Other languages
+
+Frameworks are available for many languages:
+
+- ⚗️ Java (using [PIT](https://pitest.org/))
+- Scala (using [Stryker4s](https://stryker-mutator.io/docs/stryker4s/getting-started/))
+- ⚗️ C# (using [Stryker.NET](https://stryker-mutator.io/docs/stryker-net/introduction/))
+- ⚗️ Javascript/Typescript (using [StrykerJS](https://stryker-mutator.io/docs/stryker-js/introduction/))
+- ⚗️ Python (using [Cosmic Ray](https://cosmic-ray.readthedocs.io/) or [mutmut](https://mutmut.readthedocs.io/))
+- Haskell (using [MuCheck](https://hackage.haskell.org/package/MuCheck))
+- ...
+
+⚗️: Example project in the repo
+
+<img src="/content/images/screenshot-pit.png" class="absolute top-5 left-120 w-1/4 rounded" />
+<img src="/content/images/screenshot-stryker.png" class="absolute top-30 left-130 w-1/4 rounded" />
+<img src="/content/images/screenshot-mutmut.png" class="absolute top-85 left-140 w-1/4 rounded" />
+<img src="/content/images/screenshot-mucheck.png" class="absolute top-95 left-150 w-1/4 rounded" />
+
+---
+
+<img src="/content/images/mutant.svg" class="absolute top-45 left-120 w-1/2 rounded" />
 
 ## Mutation Testing: Summary
 
@@ -160,3 +185,11 @@ But the concept is available in most languages
 - Don't include it in your CI/CD pipeline (it's not a low resource process)!
 - Use it as an exploratory tool to find bugs in your code
 - Use it to find critical bugs in your code
+
+<!-- horizontal flip of image -->
+<style>
+  img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+</style>
