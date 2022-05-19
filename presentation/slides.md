@@ -25,9 +25,11 @@ drawings:
 
 ### Patrick Drechsler
 
+<img src="content/images/Male-Zombie.png" class="absolute top-45 left-0 h-2/3 rounded" />
+
 ---
 
-## Code Coverage 100%
+### Code Coverage 100%
 
 what more do you want?
 
@@ -148,11 +150,11 @@ https://stryker-mutator.io/docs/stryker-net/mutations/
 <img src="/content/images/screenshot-stryker-mutations.png" class="absolute top-35 left-50 h-2/3 rounded" />
 
 ---
-layout: image-left
-image: "content/images/Male-Zombie.png"
+layout: image
+image: "content/images/zombie_the_walking_dead_undead_dead_monster_death_burned_horror-603211.jpg!d"
 ---
 
-### Live Demo
+### Live Demo: Mutation Testing in C#
 
 ---
 
@@ -193,3 +195,12 @@ Frameworks are available for many languages:
     transform: scaleX(-1);
   }
 </style>
+
+---
+layout: image-right
+image: "/content/images/zombie-5160026_1280.webp"
+---
+
+### The End
+
+Any Questions?
