@@ -134,6 +134,9 @@ Did any mutants survive?
 
 Many mutation frameworks have an interactive html report
 ---
+layout: image-left
+image: "content/images/Male-Zombie.png"
+---
 
 ## Live Demo
 
