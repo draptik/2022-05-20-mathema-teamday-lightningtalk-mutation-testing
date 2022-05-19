@@ -1,2 +1,3 @@
 #!/bin/sh
-dotnet tool run dotnet-stryker
+dotnet tool run dotnet-stryker -o
+
