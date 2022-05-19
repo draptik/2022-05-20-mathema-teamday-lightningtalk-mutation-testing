@@ -188,8 +188,9 @@ Frameworks are available for many languages:
 
 ## Mutation Testing: Summary
 
-- Mutation testing is a process of testing code for unintended side effects
-- Don't include it in your CI/CD pipeline (it's not a low resource process)!
+- Mutation testing modifies production code to find corner cases
+- It requires a lot of resources: use deliberately!
+- Don't include it in your CI/CD pipeline
 - Use it as an exploratory tool to find bugs in your code
 - Use it to find critical bugs in your code
 
