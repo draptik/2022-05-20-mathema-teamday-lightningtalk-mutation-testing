@@ -1,0 +1,14 @@
+# ./.tmuxinator.yml
+
+name: mutationtesting
+root: .
+
+windows:
+    - content:
+        layout: main-horizontal
+        panes:
+            - cd DemoCsharp
+            - cd DemoJava/Demo
+            - cd DemoJs
+            - cd DemoPython/python-demo
+            
