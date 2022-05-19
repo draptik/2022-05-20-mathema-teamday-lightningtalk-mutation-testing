@@ -87,6 +87,9 @@ public class RulesTests
 - but, are we covering all corner cases?
 
 ---
+layout: image-right
+image: "content/images/cabeca-zumbi.png"
+---
 
 ## Let's create some mutants!
 
@@ -108,11 +111,15 @@ if (s.Length >= 3) // <- this is another "MUTANT"
 
 
 ```csharp
-if (s.Length <= 3) // <- this is yet another "MUTANT"
+if (s.Length <= 3) // <- and another "MUTANT"
 ```
 
 Do we still have the same code coverage?
 
+
+---
+layout: image-right
+image: "content/images/zombie-4659324_1280.webp"
 ---
 
 ## Concept of mutation testing
