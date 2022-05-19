@@ -8,4 +8,4 @@ The slides are [here (PDF)](presentation/slides-export.pdf).
 
 ## Code Demos
 
-See [README.md](code/REAMDE.md).
+See the README in the code folder.
