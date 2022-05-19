@@ -175,7 +175,7 @@ Frameworks are available for many languages:
 - ⚗️ C# (using [Stryker.NET](https://stryker-mutator.io/docs/stryker-net/introduction/))
 - ⚗️ Javascript/Typescript (using [StrykerJS](https://stryker-mutator.io/docs/stryker-js/introduction/))
 - ⚗️ Python (using [Cosmic Ray](https://cosmic-ray.readthedocs.io/) or [mutmut](https://mutmut.readthedocs.io/))
-- C/C++ (exist, I was to lazy to research..)
+- C/C++ (there are many frameworks!)
 - Haskell (using [MuCheck](https://hackage.haskell.org/package/MuCheck))
 - ...
 
