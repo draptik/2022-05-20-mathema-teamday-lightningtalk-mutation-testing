@@ -14,14 +14,6 @@
                 <groupId>org.pitest</groupId>
                 <artifactId>pitest-maven</artifactId>
                 <version>1.7.6</version>
-                <configuration>
-                    <targetClasses>
-                        <param>draptik*</param>
-                    </targetClasses>
-                    <targetTests>
-                        <param>draptik*</param>
-                    </targetTests>
-                </configuration>
                 <dependencies>
                     <dependency>
                         <groupId>org.pitest</groupId>
