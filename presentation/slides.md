@@ -31,13 +31,16 @@ drawings:
 
 ### Code Coverage 100%
 
-what more do you want?
 
-<img src="content/images/screenshot-code-coverage-100percent.png" class="absolute top-35 left-80 h-2/3 rounded" />
+<img src="content/images/screenshot-code-coverage-example.png" />
 
 ---
 
-<img src="content/images/screenshot-code-coverage-example.png" />
+### Code Coverage 100%
+
+what more do you want?
+
+<img src="content/images/screenshot-code-coverage-100percent.png" class="absolute top-35 left-80 h-2/3 rounded" />
 
 
 ---
