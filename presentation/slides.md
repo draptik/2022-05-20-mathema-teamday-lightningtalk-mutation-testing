@@ -49,7 +49,7 @@ layout: my-two-cols
 
 ::top::
 
-### Example
+## Example
 
 ::left::
 
@@ -133,7 +133,7 @@ layout: image-right
 image: "content/images/zombie-4659324_1280.webp"
 ---
 
-### Concept
+## Concept
 
 - Production code is modified (by the mutation testing framework)
 - Test suite is run
@@ -151,7 +151,7 @@ layout: iframe-right
 url: https://stryker-mutator.io/docs/stryker-net/mutations/
 ---
 
-### Example mutations
+## Example mutations
 
 https://stryker-mutator.io/docs/stryker-net/mutations/
 
@@ -162,7 +162,7 @@ layout: image
 image: "content/images/zombie_the_walking_dead_undead_dead_monster_death_burned_horror-603211.jpg!d"
 ---
 
-### Live Demo: Mutation Testing in C#
+## Live Demo
 
 ---
 
@@ -211,6 +211,6 @@ layout: image-right
 image: "/content/images/zombie-5160026_1280.webp"
 ---
 
-### The End
+## The End
 
 Any Questions?
