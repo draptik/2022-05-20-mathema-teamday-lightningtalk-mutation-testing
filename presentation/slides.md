@@ -155,7 +155,7 @@ url: https://stryker-mutator.io/docs/stryker-net/mutations/
 
 https://stryker-mutator.io/docs/stryker-net/mutations/
 
-<img src="/content/images/screenshot-stryker-mutations.png" class="absolute top-35 left-50 h-2/3 rounded" />
+<img src="/content/images/screenshot-stryker-mutations.png" class="absolute top-40 left-50 h-2/3 rounded" />
 
 ---
 layout: image
